@@ -1,0 +1,112 @@
+@font-face {
+    font-family: Minecraft;
+    src: url(Resources/Minecraft.ttf);
+}
+
+
+.section1 {
+    background-image: url(Resources/grass.png);
+    height: 160px;
+    font-family: Minecraft;
+    color: #fff;
+    text-shadow: #fff 1px 0 10px;
+    font-weight: bolder;
+    font-size: 100px;
+    text-align: center;
+    
+}
+
+.section2 {
+    background-image: url(Resources/dirt.png);
+    height: 100vh;
+    font-family: Tahoma-Bold;
+    color: #fff;
+    text-shadow: #fff 1px 0 10px;
+    font-weight: bolder;
+    font-size: 100px;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+button {
+    background-image: url(Resources/normal-button.png);
+    height: 80px;
+    width: 800px;
+    background-size: cover;
+    font-family: Minecraft;
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 5px 5px 0px #000000;
+    border: none;
+    text-decoration: none;
+    
+}
+
+button:hover {
+    background-image: url(Resources/hover-button.png);
+}
+
+button:active {
+    background-image: url(Resources/pressed-button.png);
+}
+
+.disc {
+    font-family: Minecraft;
+    font-weight: normal;
+    text-shadow: 5px 5px 0px #000000;
+    font-size: 60px;
+    margin: 0px;
+}
+
+.disc-p {
+    font-family: Minecraft;
+    font-weight: normal;
+    text-shadow: 5px 5px 0px #000000;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.modal {
+    margin: auto;
+    margin-top: 20px;
+    background-image: url(Resources/empty-popup.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 30px;
+    width: 800px;
+    visibility: hidden;
+
+}
+
+.open-modal{
+    visibility: visible;
+}
+
+.modal-button {
+    font-size: 35px;
+    cursor: grabbing;
+}
+
+.downloads {
+    margin: auto;
+    background-image: url(Resources/empty-popup.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 100px;
+    padding-top: 15px; 
+    width: 800px;
+    position: relative;
+    visibility: hidden;
+    top: -550px;
+
+}
+
+.open-downloads{
+    visibility: visible;
+}

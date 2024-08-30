@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <title>MCx5</title>
+    
+</head>
+<body>
+    
+    <section class="section1">MCx5</section>
+    <section class="section2">
+        <button onclick="openPopup()">Download</button>
+        <button>Videos</button>
+        <br>
+        <a href="versions.html" class="link">
+            <button>Versions</button>
+        </a>
+        <button>Guide</button>
+        <div class="modal" id="modal">
+            <div>
+                <h1 class="disc">**PLEASE READ**</h1>
+                <p class="disc-p">I do not support pirating Minecraft in any way. This is a link to TLauncher. The only reason I'm adding the option to download is to just let you try the game out. Please, only use this version to see if you like the game or not.</p>
+                <button class="modal-button" onclick="openDownloads()">I understand, take me to the downloads</button>
+            </div>
+        </div>
+        <div class="downloads" id="modal-downloads">
+            <div>
+                <a href="https://tlauncher.org/jar" class="link">
+                    <button>Universal Jar</button>
+                </a>
+                <p class="disc-p">Universal .jar file. Works with Windows, Mac, and Linux.</p>
+                <a href="https://tlauncher.org/installer" class="link">
+                    <button>Installer</button>
+                </a>
+                <p class="disc-p">Installer .exe file. Only works on Windows.</p>
+                <button onclick="closeDownloads()">Done</button>
+            </div>
+        </div>
+        
+<script>
+
+    let popup = document.getElementById("modal");
+    let downloads = document.getElementById("modal-downloads");
+
+    function openPopup() {
+        popup.classList.add("open-modal");
+    }
+
+    function openDownloads() {
+        popup.classList.remove("open-modal");
+        downloads.classList.add("open-downloads");
+
+    }
+
+    function closeDownloads() {
+        downloads.classList.remove("open-downloads");
+    }
+
+</script>
+
+</body>
+</html>
